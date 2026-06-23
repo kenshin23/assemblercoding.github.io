@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AssemblerCoding — From concept to finished system</title>
+  <meta name="description" content="AssemblerCoding is a solo engineering studio where AI agents are part of the team — taking software from concept to finished, production-ready system." />
+  <meta name="theme-color" content="#060912" />
+
+  <!-- Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AssemblerCoding — From concept to finished system" />
+  <meta property="og:description" content="A solo engineering studio where AI agents are part of the team. Ideas, assembled into production software — end to end." />
+  <meta property="og:image" content="assets/logo.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/logo.jpeg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="AssemblerCoding home">
+      <svg class="brand-mark" viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+        <defs>
+          <linearGradient id="navg" x1="6" y1="42" x2="42" y2="8" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#173a8f"/>
+            <stop offset=".55" stop-color="#2f6fe0"/>
+            <stop offset="1" stop-color="#6cb4ff"/>
+          </linearGradient>
+        </defs>
+        <path d="M11 37 L24 12 L37 37" fill="none" stroke="url(#navg)" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <g fill="none" stroke="#9cc6ff" stroke-width="2">
+          <circle cx="24" cy="29" r="4.6"/>
+          <path d="M24 22.4v-2.2M24 37.8v-2.2M30.6 29h2.2M15.2 29h2.2M28.7 24.3l1.6-1.6M17.7 35.3l1.6-1.6M28.7 33.7l1.6 1.6M17.7 22.7l1.6 1.6" stroke-linecap="round"/>
+        </g>
+      </svg>
+      <span class="brand-word">Assembler<span class="brand-word-2">Coding</span></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#approach">Approach</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a class="btn btn-sm" href="mailto:hello@assemblercoding.com">Start a project</a>
+  </header>
+
+  <main id="top">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-lines"></div>
+        <div class="glow glow-a"></div>
+        <div class="glow glow-b"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow reveal"><span class="dot"></span>AI-native software studio</span>
+          <h1 class="reveal" data-delay="1">
+            From concept to<br /><span class="grad-text">finished system.</span>
+          </h1>
+          <p class="lede reveal" data-delay="2">
+            AssemblerCoding is a one-person engineering studio where AI agents are part of the team.
+            Strategy, design, code, and deployment — assembled into production software, end to end.
+          </p>
+          <div class="hero-cta reveal" data-delay="3">
+            <a class="btn" href="mailto:hello@assemblercoding.com">Start a project<span class="btn-arrow">→</span></a>
+            <a class="btn btn-ghost" href="#work">See the work</a>
+          </div>
+          <div class="hero-meta reveal" data-delay="4">
+            <span><strong>2</strong> products live</span>
+            <span class="sep"></span>
+            <span><strong>1</strong> builder + a fleet of agents</span>
+            <span class="sep"></span>
+            <span>concept&nbsp;→&nbsp;launch</span>
+          </div>
+        </div>
+
+        <!-- Terminal card -->
+        <div class="terminal reveal" data-delay="3" aria-hidden="true">
+          <div class="term-bar">
+            <span class="tdot"></span><span class="tdot"></span><span class="tdot"></span>
+            <span class="term-title">assembler — build</span>
+          </div>
+          <pre class="term-body"><code id="term-code"></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== APPROACH / PIPELINE ===== -->
+    <section class="section" id="approach">
+      <div class="section-head reveal">
+        <span class="kicker">// the method</span>
+        <h2>One person. The full pipeline.</h2>
+        <p>Traditional builds hand work between people and lose fidelity at every seam. Here the whole chain runs from a single point of accountability — orchestrating AI agents to move fast without dropping the thread.</p>
+      </div>
+
+      <ol class="pipeline">
+        <li class="step reveal">
+          <span class="step-no">01</span>
+          <h3>Concept</h3>
+          <p>We pin down the problem, the users, and what "done" actually means before a line of code exists.</p>
+        </li>
+        <li class="step reveal" data-delay="1">
+          <span class="step-no">02</span>
+          <h3>Architecture</h3>
+          <p>Data models, flows, and the tech that fits — designed to scale with the business, not fight it.</p>
+        </li>
+        <li class="step reveal" data-delay="2">
+          <span class="step-no">03</span>
+          <h3>Build</h3>
+          <p>Agent-accelerated development with a human in the loop on every decision that matters.</p>
+        </li>
+        <li class="step reveal" data-delay="3">
+          <span class="step-no">04</span>
+          <h3>Ship &amp; maintain</h3>
+          <p>Deployed, monitored, and iterated. A finished system — not a prototype left on a shelf.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== CAPABILITIES ===== -->
+    <section class="section" id="capabilities">
+      <div class="section-head reveal">
+        <span class="kicker">// what gets built</span>
+        <h2>Capabilities</h2>
+        <p>Whether it's a marketing presence or the system that runs the business, it's built to be real, reliable, and yours.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-ico" aria-hidden="true">◐</div>
+          <h3>Web applications</h3>
+          <p>Full-stack apps with auth, data, and dashboards — the software your operation runs on.</p>
+        </article>
+        <article class="card reveal" data-delay="1">
+          <div class="card-ico" aria-hidden="true">▤</div>
+          <h3>Management platforms</h3>
+          <p>Custom tools for scheduling, records, and workflows, fitted to how you actually work.</p>
+        </article>
+        <article class="card reveal" data-delay="2">
+          <div class="card-ico" aria-hidden="true">◇</div>
+          <h3>Marketing sites</h3>
+          <p>Fast, polished, search-friendly sites that make a small business look established.</p>
+        </article>
+        <article class="card reveal" data-delay="3">
+          <div class="card-ico" aria-hidden="true">⚙</div>
+          <h3>AI-augmented delivery</h3>
+          <p>Agentic workflows that compress timelines and budgets without cutting quality.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== WORK ===== -->
+    <section class="section" id="work">
+      <div class="section-head reveal">
+        <span class="kicker">// selected work</span>
+        <h2>Shipped &amp; running.</h2>
+        <p>Real systems, live in production, serving real businesses.</p>
+      </div>
+
+      <div class="work-grid">
+        <a class="work-card reveal" href="https://radiantdental.app" target="_blank" rel="noopener">
+          <div class="work-top">
+            <span class="work-tag">Product · App</span>
+            <span class="work-link">radiantdental.app ↗</span>
+          </div>
+          <h3>Radiant Dental</h3>
+          <p>A dental clinic management app — scheduling, patient records, and the day-to-day operations of a practice in one system.</p>
+          <div class="work-tech">
+            <span>Web app</span><span>Auth &amp; data</span><span>Operations</span>
+          </div>
+        </a>
+
+        <a class="work-card reveal" data-delay="1" href="https://odsandraparra.com" target="_blank" rel="noopener">
+          <div class="work-top">
+            <span class="work-tag">Client · Website</span>
+            <span class="work-link">odsandraparra.com ↗</span>
+          </div>
+          <h3>Ods. Andra Parra</h3>
+          <p>A clean, trustworthy website for a private dental practice — designed to turn local searches into booked appointments.</p>
+          <div class="work-tech">
+            <span>Marketing site</span><span>SEO</span><span>Healthcare</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <span class="kicker">// the studio</span>
+          <h2>Why "Assembler"?</h2>
+          <p>AssemblerCoding started from a simple conviction: a single developer, working alongside AI agents, can now take a concept all the way to a finished, working system — the part that used to require a whole team.</p>
+          <p>"Assembler" is the idea at the core. The work isn't just writing code; it's assembling strategy, design, engineering, and AI into one coherent thing that ships. One point of contact, full ownership, and the speed that comes from a builder who's directly in the loop.</p>
+          <p class="about-sig">— AssemblerCoding LLC</p>
+        </div>
+
+        <aside class="about-side reveal" data-delay="1">
+          <div class="logo-chip">
+            <img src="assets/logo.jpeg" alt="AssemblerCoding logo" width="220" height="220" loading="lazy" />
+          </div>
+          <ul class="about-stats">
+            <li><strong>End-to-end</strong><span>concept · design · build · ship</span></li>
+            <li><strong>Solo + AI</strong><span>one builder, a fleet of agents</span></li>
+            <li><strong>In production</strong><span>shipping real, live systems</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="contact-card reveal">
+        <div class="contact-bg" aria-hidden="true"></div>
+        <span class="kicker">// let's build</span>
+        <h2>Have a concept?<br />Let's assemble it.</h2>
+        <p>Tell me what you're trying to build. I'll tell you the fastest honest path from idea to a system that's actually running.</p>
+        <a class="btn btn-lg" href="mailto:hello@assemblercoding.com">hello@assemblercoding.com<span class="btn-arrow">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="foot-brand">
+      <svg viewBox="0 0 48 48" width="26" height="26" aria-hidden="true">
+        <path d="M11 37 L24 12 L37 37" fill="none" stroke="#6cb4ff" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="24" cy="29" r="4.6" fill="none" stroke="#9cc6ff" stroke-width="2"/>
+      </svg>
+      <span>AssemblerCoding</span>
+    </div>
+    <div class="foot-links">
+      <a href="mailto:hello@assemblercoding.com">hello@assemblercoding.com</a>
+      <a href="https://radiantdental.app" target="_blank" rel="noopener">radiantdental.app</a>
+      <a href="https://odsandraparra.com" target="_blank" rel="noopener">odsandraparra.com</a>
+    </div>
+    <p class="foot-fine">© <span id="year"></span> AssemblerCoding LLC · Concept to finished system.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
