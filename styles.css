@@ -330,6 +330,13 @@ img { display: block; max-width: 100%; }
 .contact-card > * { position: relative; z-index: 1; }
 .contact-card .kicker { margin-bottom: 1.2rem; }
 .contact-card p { color: var(--muted); max-width: 34rem; margin: 0 auto 2.2rem; font-size: 1.08rem; }
+.contact-meta {
+  margin-top: 2rem; display: flex; flex-direction: column; gap: .35rem;
+  font-family: var(--font-mono); font-size: .82rem; font-style: normal; color: var(--faint);
+}
+.contact-meta .cm-name { color: var(--muted); }
+.contact-meta a { color: var(--muted); transition: color .25s var(--ease); }
+.contact-meta a:hover { color: var(--sky); }
 
 /* ============================================================
    Footer
